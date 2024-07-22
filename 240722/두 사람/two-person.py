@@ -6,7 +6,12 @@ arr2 = input().split()
 age2 = int(arr2[0])
 gender2 = arr2[1]
 
-if (age1 >=19 or age2 >= 19) and (gender1 == "M" or gender2 == "M"):
-    print(1)
+if (age1 >=19 or age2 >= 19) :
+    if (age1>=19 and gender1 =="M"):
+        print(1)
+    elif (age2>=19 and gender2 =="M"):
+        print(1)
+    else:
+        print(0)
 else:
     print(0)
