@@ -1,8 +1,8 @@
 a = int(input())
 
 if a %2 !=0:
-    a +=3
+    b=a+3
 
-if a %3 ==0:
-    a /= 3
-    print(int(a))
+if b %3 ==0:
+    b /= 3
+    print(int(b))
