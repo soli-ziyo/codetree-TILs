@@ -8,3 +8,5 @@ else:
 if b %3 ==0:
     b = b//3
     print(b)
+else:
+    print(b)
