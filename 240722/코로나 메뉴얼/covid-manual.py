@@ -11,3 +11,17 @@ if (cold1 == "Y" and temp1 >=37):
         print("E")
     else:
         print("N")
+elif (cold2 =="Y" and temp2 >=37):
+    if (cold1 == "Y" and temp1>=37):
+        print("E")
+    elif (cold3 == "Y" and temp3>=37):
+        print("E")
+    else:
+        print("N")
+elif (cold3 =="Y" and temp3 >=37):
+    if (cold1 == "Y" and temp1>=37):
+        print("E")
+    elif (cold2 == "Y" and temp2>=37):
+        print("E")
+    else:
+        print("N")
