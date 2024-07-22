@@ -5,9 +5,9 @@ cold3, temp3 = input().split()
 temp1, temp2, temp3 = int(temp1), int(temp2), int(temp3)
 
 if (cold1 == "Y" and temp1 >=37):
-    if (cold2 == "Y" and temp2):
+    if (cold2 == "Y" and temp2>=37):
         print("E")
-    elif (cold3 == "Y" and temp3):
+    elif (cold3 == "Y" and temp3>=37):
         print("E")
     else:
         print("N")
