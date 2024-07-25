@@ -18,4 +18,4 @@ for i in arr:
                 sum += arr[j]
             break
 
-print(sum, sum/n)
+print(f"{sum} {sum/n:.1f}")
