@@ -11,11 +11,13 @@ for i in arr:
         if n !=0:
             for j in range(n):
                 sum += mylist[j]
+                mean = sum/n
             break
         else:
             n = len(arr)
             for j in range(n):
                 sum += arr[j]
+                mean = sum/n
             break
 
-print(f"{sum} {sum/n:.1f}")
+print(f"{sum} {mean:.1f}")
