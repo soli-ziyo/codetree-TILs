@@ -2,6 +2,7 @@ arr = list(map(int, input().split()))
 cnt =0
 mylist = []
 sum =0
+mean=0
 
 for i in arr:
     if i <250:
