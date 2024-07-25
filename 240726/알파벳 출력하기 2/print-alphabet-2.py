@@ -6,7 +6,12 @@ for i in range(n):
         print(' ', end=' ')
 
     for j in range(n-i):
-        print(chr(cnt), end=' ')
-        cnt +=1
+        if chr(cnt) =="Z":
+            print(chr(cnt), end=' ')
+            cnt =ord("A")
+        else:
+            print(chr(cnt), end=' ')
+            cnt +=1
+    
     
     print()
