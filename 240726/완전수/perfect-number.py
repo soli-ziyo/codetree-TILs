@@ -8,4 +8,5 @@ for i in range(a, b+1):
              sum +=j
     if sum == i:
         cnt +=1
+    sum=0
 print(cnt)
