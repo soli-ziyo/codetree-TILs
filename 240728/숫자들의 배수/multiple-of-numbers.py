@@ -7,7 +7,7 @@ for i in range(1, 11):
     k = n *i
     print(k, end=' ')
 
-    if i % 5==0:
+    if k % 5==0:
         cnt +=1
 
     if cnt ==2:
