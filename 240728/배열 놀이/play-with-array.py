@@ -8,9 +8,10 @@ for i in range(q):
         print(arr[mylist[1]-1])
     elif mylist[0] ==2:
         if mylist[1] in arr:
-            print(arr.index(mylist[1]))
+            print(arr.index(mylist[1])+1)
         else:
             print(0)
     elif mylist[0] ==3:
         for j in range(mylist[1], mylist[2]+1):
-            print(j, end=' ')
+            print(arr[j-1], end=' ')
+        print()
