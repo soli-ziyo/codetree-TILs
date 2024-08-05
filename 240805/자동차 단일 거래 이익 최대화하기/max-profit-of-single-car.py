@@ -1,5 +1,5 @@
 n = int(input())
-arr = list(map(int, input().split()))
+price = list(map(int, input().split()))
 
 max_val = 0
 for i in range(n):
