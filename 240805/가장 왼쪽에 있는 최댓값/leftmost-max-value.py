@@ -1,7 +1,7 @@
 n = int(input())
 arr = list(map(int, input().split()))
 
-result = -1
+result = n
 
 while result != 0:
     result = arr.index(max(arr[0:result]))
