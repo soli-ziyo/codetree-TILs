@@ -12,6 +12,8 @@ else:
     k = -1
 
 if k != -1:
+    if key == given_str:
+        k = 0
     if key in new_str:
         k = new_str.find(key) -1
 
