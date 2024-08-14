@@ -1,14 +1,23 @@
-def three(i):
-    return i %3 ==0
+def contains_369(n):
+    # 계속 10으로 나눠주며
+    # 일의 자리를 조사합니다.
+    while n > 0:
+        if n % 10 == 3 or n % 10 == 6 or n % 10 == 9:
+            return True
 
-def is_magic_num(i):
-    ten = i//10 ; one = i%10
-    return ten ==3 or ten ==6  or ten ==9 or three(i) or one==3 or one==6 or one==9
+        n //= 10
+
+    return False
+
+
+# 3, 6, 9를 포함하거나 3의 배수인지를 판단합니다.
+def is_369_number(n):
+    return contains_369(n) or (n % 3 == 0)
 
 
 a, b = map(int, input().split())
 cnt = 0
 for i in range(a, b+1):
-    if is_magic_num(i):
+    if is_369_number(i):
         cnt +=1
 print(cnt)
